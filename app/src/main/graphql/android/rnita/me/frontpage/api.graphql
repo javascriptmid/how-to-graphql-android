@@ -1,0 +1,20 @@
+query FeedQuery {
+    feed {
+        links {
+            id
+            url
+            description
+            postedBy {
+                id
+                name
+            }
+            votes {
+                id
+                user {
+                    id
+                }
+            }
+        }
+        count
+    }
+}
